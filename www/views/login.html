@@ -1,0 +1,41 @@
+<ion-content style="background: url('img/loginBackground1.jpg') no-repeat">
+
+
+
+<div class="row">
+    <div class="col bar bar-subheader bar-calm">
+        <h2 class="title">Kodevz</h2>
+    </div>
+</div>
+    <div class="row" style="margin-top: 30%">
+        <div class="col">
+            <label class="item item-input">
+                <span class="input-label">Username</span>
+                <input type="text" placeholder="Type Here...." ng-model="$parent.userName" required>
+            </label>
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label class="item item-input">
+                <span class="input-label">Password</span>
+                <input type="password" placeholder="Type Here...." ng-model="$parent.userPassword" required>
+            </label>
+        </div>
+
+    </div>
+
+    <div class="row row-center">
+        <div class="col buttons">
+            <button class="button button-light" style="width: 150px" ng-click="login()">Login</button>
+
+        </div>
+          <div class="col buttons">
+            <button class="button button-assertive" style="width: 150px" ui-sref="signup">SignUp</button>
+        </div>
+    </div>
+
+</ion-content>

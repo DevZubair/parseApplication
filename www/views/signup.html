@@ -1,0 +1,36 @@
+<ion-header-bar class="bar-positive">
+    <div class="buttons">
+        <button class="button" ui-sref="login">Back</button>
+        <h1 class="title">SignUp Page</h1>
+    </div>
+</ion-header-bar>
+
+<ion-content>
+
+    <div class="row">
+        <div class="col">
+            <p>UserName:</p>
+            <input type="text" placeholder="String Value..." ng-model="$parent.newUserName" required>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>Password:</p>
+            <input type="password" placeholder="String Value..." ng-model="$parent.newPassword" required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>Retype Password:</p>
+            <input type="password" placeholder="String Value..." ng-model="$parent.newPasswordMatch" required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button class="button button-full button-calm" ng-click="signupUser()">Create User</button>
+        </div>
+    </div>
+
+
+</ion-content>
